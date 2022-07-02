@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'eslint-config-binibiz-react',
-    'eslint-config-binibiz-typescript',
+    '@binibiz/eslint-config-react',
+    '@binibiz/eslint-config-typescript',
     './rules/react-typescript',
   ].map(require.resolve),
   rules: {}
