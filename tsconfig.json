@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": ".bin",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "es2020",
+    "lib": [ "es2020", "dom" ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "check/*"
+      ]
+    },
+    "strictNullChecks": true
+  },
+  "include": [
+    "check/**/*",
+    "types/*.d.ts",
+    "./*.ts",
+    "index.js",
+    ".eslintrc.js"
+  ],
+  "exclude": [
+    "./node_modules",
+    "../../node_modules",
+    ".bin"
+  ]
+}
