@@ -1,9 +1,9 @@
 {
   "name": "@binibiz/eslint-config-react",
   "packageManager": "yarn@3.2.1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
-    "@binibiz/eslint-config-base": "^1.0.1",
+    "@binibiz/eslint-config-base": "^1.0.2",
     "eslint-plugin-react": "^7.30.1"
   },
   "peerDependencies": {
