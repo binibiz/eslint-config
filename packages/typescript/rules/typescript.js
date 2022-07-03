@@ -11,7 +11,7 @@ module.exports = {
       }
     }
   ],
-  parser: "@typescript-eslint/parser",
+  parser: require.resolve("@typescript-eslint/parser"),
   plugins: [
     "@typescript-eslint",
   ],

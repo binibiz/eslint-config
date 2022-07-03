@@ -405,29 +405,8 @@ module.exports = {
   },
   settings: {
     "import/external-module-folders": [
-      "node_modules",
-      "@nosebit",
+      "@binibiz",
     ],
-
-    "import/resolver": {
-      node: {
-        extensions: [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ],
-        moduleDirectory: [
-          "node_modules",
-        ]
-      }
-    },
-
-    /**
-     * For some reason nodejs built in modules are not
-     * being recognized so we have to add them by hand.
-     */
-    "import/core-modules": builtinModules,
   },
 
   overrides: [
