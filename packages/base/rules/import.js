@@ -101,9 +101,12 @@ module.exports = {
      * if bar is not exported by ./foo.).
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
+     *
+     * @NOTE : For some reason this rule when set to "error" is silently breaking
+     * vscode-eslint. Files do not get linted in vscode.
      */
     "import/namespace": [
-      "error",
+      "off",
     ],
   
     /**
@@ -375,7 +378,7 @@ module.exports = {
             group: "internal"
           },
           {
-            pattern: "@nosebit/**",
+            pattern: "@binibiz/**",
             group: "external"
           }
         ]
