@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.8 (2022-07-03)
+
+
+### Bug Fixes
+
+* turn a bunch of import rules off to prevent vscode eslint to break ([3963cfb](https://github.com/binibiz/eslint-config/commit/3963cfbd055d49ababba5e39623f10b13f17b066))
+
+
+
+
+
 ## 1.0.7 (2022-07-03)
 
 
