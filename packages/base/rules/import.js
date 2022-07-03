@@ -1,5 +1,3 @@
-const builtinModules = require('builtin-modules');
-
 module.exports = {
   plugins: [
     "import"
