@@ -22,11 +22,10 @@ jobs:
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          PUSHER_EMAIL: ${{ secrets.PUSHER_EMAIL }}
           PUSHER_NAME: binibot
         run: |
           npm config set access public
           git config --global user.email ${{ secrets.PUSHER_EMAIL }}
           git config --global user.name binibot
-          git remote set-url origin https://binibot:${{secrets.GITHUB_TOKEN}}@github.com/binibiz/eslint-config.git
+          git remote set-url origin https://binibot:${{secrets.BINIBOT_TOKEN}}@github.com/binibiz/eslint-config.git
           npx lerna publish --yes
