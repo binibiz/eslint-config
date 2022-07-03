@@ -3,15 +3,13 @@
   "packageManager": "yarn@3.2.1",
   "version": "1.0.2",
   "dependencies": {
-    "@binibiz/eslint-config-base": "^1.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.30.3",
-    "@typescript-eslint/parser": "^5.30.3",
-    "eslint-import-resolver-typescript": "^3.1.5"
+    "@binibiz/eslint-config-base": "^1.0.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
     "eslint": "^8.19.0",
+    "eslint-import-resolver-typescript": "^3.1.5",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsdoc": "^39.3.3",
     "typescript": "^4.7.4"
