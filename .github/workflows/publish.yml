@@ -25,7 +25,7 @@ jobs:
           PUSHER_NAME: binibot
         run: |
           npm config set access public
-          git config --global user.email ${{ secrets.PUSHER_EMAIL }}
-          git config --global user.name binibot
-          git remote set-url origin https://binibot:${{secrets.BINIBOT_TOKEN}}@github.com/binibiz/eslint-config.git
+          git config --global user.email brunomacf@gmail.com
+          git config --global user.name brunomacf
+          git remote set-url origin https://brunomacf:${{secrets.PUSHER_TOKEN}}@github.com/binibiz/eslint-config.git
           npx lerna publish --yes
