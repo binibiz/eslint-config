@@ -453,7 +453,7 @@ module.exports = {
     "@typescript-eslint/no-shadow": [
       "error",
       {
-        builtinGlobals: true,
+        builtinGlobals: false,
         hoist: "functions",
       }
     ],
@@ -709,7 +709,7 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
      */
     "@typescript-eslint/require-array-sort-compare": [
-      "error",
+      "off",
     ],
   
     /**
