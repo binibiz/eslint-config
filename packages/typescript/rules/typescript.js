@@ -391,7 +391,7 @@ module.exports = {
       "error",
       {
         checksConditionals: true,
-        checksVoidReturn: true,
+        checksVoidReturn: false,
       }
     ],
   
