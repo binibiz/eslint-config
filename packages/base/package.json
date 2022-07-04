@@ -3,12 +3,12 @@
   "packageManager": "yarn@3.2.1",
   "version": "1.0.8",
   "dependencies": {
-    "eslint-import-resolver-node": "^0.3.6"
-  },
-  "peerDependencies": {
-    "eslint": "^8.19.0",
+    "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsdoc": "^39.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.19.0"
   },
   "volta": {
     "node": "14.19.1",

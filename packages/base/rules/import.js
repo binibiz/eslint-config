@@ -12,7 +12,7 @@ module.exports = {
     "import/default": [
       "off", // handled by tslint
     ],
-
+  
     /**
      * This rule enforces naming of webpack chunks in dynamic imports.
      *
@@ -21,7 +21,7 @@ module.exports = {
     "import/dynamic-import-chunkname": [
       "error",
     ],
-
+  
     /**
      * Reports funny business with exports, like repeated exports of names or defaults.
      *
@@ -30,7 +30,7 @@ module.exports = {
     "import/export": [
       "error",
     ],
-
+  
     /**
      * This rule can enforce or disallow the use of certain file extensions.
      *
@@ -46,7 +46,7 @@ module.exports = {
         tsx: "never",
       }
     ],
-
+  
     /**
      * This rule enforces that all exports are declared at the bottom of the file.
      *
@@ -55,7 +55,7 @@ module.exports = {
     "import/exports-last": [
       "off"
     ],
-
+  
     /**
      * This rule reports any imports that come after non-import statements.
      *
@@ -64,7 +64,7 @@ module.exports = {
     "import/first": [
       "error",
     ],
-
+  
     /**
      * Reports when named exports are not grouped together in a single export
      * declaration or when multiple assignments to CommonJS module.exports or
@@ -75,7 +75,7 @@ module.exports = {
     "import/group-exports": [
       "off"
     ],
-
+  
     /**
      * Forbid modules to have too many dependencies (import or require statements).
      *
@@ -84,7 +84,7 @@ module.exports = {
     "import/max-dependencies": [
       "off",
     ],
-
+  
     /**
      * Verifies that all named imports are part of the set of named exports in
      * the referenced module.
@@ -94,7 +94,7 @@ module.exports = {
     "import/named": [
       "off", // Going to be handled by tslint
     ],
-
+  
     /**
      * Enforces names exist at the time they are dereferenced, when imported as
      * a full namespace (i.e. import * as foo from './foo'; foo.bar(); will report
@@ -102,13 +102,13 @@ module.exports = {
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
      *
-     * @NOTE : For some reason this rule when set to "error" is silently breaking
-     * vscode-eslint. Files do not get linted in vscode.
+     * @NOTE : When migrating to yarn PnP this rule is silently breaking vscode-eslint.
+     * 
      */
     "import/namespace": [
-      "off",
+      "error",
     ],
-
+  
     /**
      * Enforces having one or more empty lines after the last top-level import
      * statement or require call
@@ -118,7 +118,7 @@ module.exports = {
     "import/newline-after-import": [
       "error",
     ],
-
+  
     /**
      * Node.js allows the import of modules using an absolute path such as /home/xyz/file.js.
      * That is a bad practice as it ties the code using it to your computer, and therefore makes
@@ -129,7 +129,7 @@ module.exports = {
     "import/no-absolute-path": [
       "error",
     ],
-
+  
     /**
      * Reports require([array], ...) and define([array], ...) function calls at
      * the module scope. Will not report if !=2 arguments, or first argument is
@@ -140,7 +140,7 @@ module.exports = {
     "import/no-amd": [
       "error",
     ],
-
+  
     /**
      * Reports if a module's default export is unnamed.
      *
@@ -149,7 +149,7 @@ module.exports = {
     "import/no-anonymous-default-export": [
       "error",
     ],
-
+  
     /**
      * Reports require([string]) function calls. Will not report if >1 argument,
      * or single argument is not a literal string. Reports module.exports or
@@ -160,7 +160,7 @@ module.exports = {
     "import/no-commonjs": [
       "error",
     ],
-
+  
     /**
      * Ensures that there is no resolvable path back to this module via its dependencies.
      * This rule is comparatively computationally expensive.
@@ -170,7 +170,7 @@ module.exports = {
     "import/no-cycle": [
       "off",
     ],
-
+  
     /**
      * Prohibit default exports.
      *
@@ -179,19 +179,19 @@ module.exports = {
     "import/no-default-export": [
       "off",
     ],
-
+  
     /**
      * Reports use of a deprecated name, as indicated by a JSDoc block with a
      * @deprecated tag or TomDoc Deprecated: comment.
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
      *
-     * @NOTE : Make VSCode ESLint to hang with new yarn 3.
+     * @NOTE : When migrating to yarn PnP this rule makes VSCode ESLint to hang.
      */
     "import/no-deprecated": [
-      "off"
+      "error"
     ],
-
+  
     /**
      * Reports if a resolved path is imported more than once.
      *
@@ -200,7 +200,7 @@ module.exports = {
     "import/no-duplicates": [
       "off", // Handled by tslint
     ],
-
+  
     /**
      * The require method from CommonJS can be given expressions that will be
      * resolved at runtime.
@@ -210,31 +210,31 @@ module.exports = {
     "import/no-dynamic-require": [
       "error",
     ],
-
+  
     /**
      * Forbid the import of external modules that are not declared in the package.json's
      * dependencies, devDependencies, optionalDependencies or peerDependencies
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
      *
-     * @NOTE : Make VSCode ESLint to hang with new yarn 3.
+     * @NOTE : When migrating to yarn PnP this rule makes VSCode ESLint to hang.
      */
     "import/no-extraneous-dependencies": [
-      "off",
+      "error",
       {
         packageDir: []
       }
     ],
-
+  
     /**
      * Use this rule to prevent importing the submodules of other modules.
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
      */
-     "import/no-internal-modules": [
+    "import/no-internal-modules": [
       "off",
     ],
-
+  
     /**
      * Forbids the use of mutable exports with var or let.
      *
@@ -243,7 +243,7 @@ module.exports = {
     "import/no-mutable-exports": [
       "error",
     ],
-
+  
     /**
      * Reports use of an exported name as the locally imported name of a default
      * export.
@@ -253,7 +253,7 @@ module.exports = {
     "import/no-named-as-default": [
       "off",
     ],
-
+  
     /**
      * Reports if namespace import like `import * as foo from 'foo';` is used.
      *
@@ -300,12 +300,12 @@ module.exports = {
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
      *
-     * @NOTE : Make VSCode ESLint to hang with new yarn 3.
+     * @NOTE : When migrating to yarn PnP this rule makes VSCode ESLint to hang.
      */
     "import/no-self-import": [
-      "off",
+      "error",
     ],
-
+  
     /**
      * With both CommonJS' require and the ES6 modules' import syntax, it is possible to import a
      * module but not to use its result. This can be done explicitly by not assigning the module
@@ -314,7 +314,7 @@ module.exports = {
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
      */
-     "import/no-unassigned-import": [
+    "import/no-unassigned-import": [
       "off",
     ],
   
@@ -323,16 +323,16 @@ module.exports = {
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
      *
-     * @NOTE : Make VSCode ESLint to hang with new yarn 3.
+     * @NOTE : When migrating to yarn PnP this rule makes VSCode ESLint to hang.
      */
     "import/no-unresolved": [
-      "off",
+      "error",
       {
         commonjs: true,
         caseSensitive: true,
       },
     ],
-
+  
     /**
      * Use this rule to prevent unnecessary path segments in import and require statements.
      *
@@ -341,7 +341,7 @@ module.exports = {
     "import/no-useless-path-segments": [
       "error",
     ],
-
+  
     /**
      * Forbid Webpack loader syntax in imports.
      *
@@ -350,16 +350,16 @@ module.exports = {
     "import/no-webpack-loader-syntax": [
       "error",
     ],
-    
+  
     /**
      * Enforce a convention in the order of require() / import statements
      *
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
      *
-     * @NOTE : Make VSCode ESLint to hang with new yarn 3.
+     * @NOTE : When migrating to yarn PnP this rule makes VSCode ESLint to hang.
      */
     "import/order": [
-      "off",
+      "error",
       {
         groups: [
           "builtin",
@@ -371,8 +371,8 @@ module.exports = {
         ],
         "newlines-between": "always",
         alphabetize: {
-          order: "asc",
-          caseInsensitive: true
+          order: 'asc', /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */
+          caseInsensitive: true /* ignore case. Options: [true, false] */
         },
         pathGroups: [
           {
@@ -388,13 +388,13 @@ module.exports = {
             group: "internal"
           },
           {
-            pattern: "@binibiz/**",
+            pattern: "@nosebit/**",
             group: "external"
           }
         ]
       }
     ],
-
+  
     /**
      * When there is only a single export from a module, prefer using default export over named export.
      *
@@ -403,7 +403,7 @@ module.exports = {
     "import/prefer-default-export": [
       "error",
     ],
-    
+  
     /**
      * Warn if a module could be mistakenly parsed as a script by a consumer leveraging
      * Unambiguous JavaScript Grammar to determine correct parsing goal.

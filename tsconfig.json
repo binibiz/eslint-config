@@ -16,20 +16,16 @@
     "paths": {
       "@/*": [
         "check/*"
-      ]
+      ],
     },
     "strictNullChecks": true
   },
   "include": [
     "check/**/*",
-    "types/*.d.ts",
-    "./*.ts",
-    "index.js",
     ".eslintrc.js"
   ],
   "exclude": [
     "./node_modules",
-    "../../node_modules",
     ".bin"
   ]
 }
