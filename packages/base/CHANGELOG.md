@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-base@1.2.0...@binibiz/eslint-config-base@1.2.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* **base:** set binibiz packages as external ([4180371](https://github.com/binibiz/eslint-config/commit/41803716de27a5aeb18ce05816431186f817596b))
+
+
+
+
+
 # [1.2.0](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-base@1.1.0...@binibiz/eslint-config-base@1.2.0) (2022-07-04)
 
 
