@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-react-typescript@1.0.8...@binibiz/eslint-config-react-typescript@1.1.0) (2022-07-04)
+
+
+### Features
+
+* use yarn node-modules nodeLinker for now ([4bfbd31](https://github.com/binibiz/eslint-config/commit/4bfbd317ed61dc0fca4ab6cfb24fdb18f1efb4cb))
+
+
+
+
+
 ## 1.0.8 (2022-07-03)
 
 
