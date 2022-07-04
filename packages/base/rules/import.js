@@ -390,6 +390,10 @@ module.exports = {
           {
             pattern: "@nosebit/**",
             group: "external"
+          },
+          {
+            pattern: "@binibiz/**",
+            group: "external"
           }
         ]
       }
