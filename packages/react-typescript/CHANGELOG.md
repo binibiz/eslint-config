@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-react-typescript@1.1.0...@binibiz/eslint-config-react-typescript@1.2.0) (2022-07-04)
+
+
+### Features
+
+* add missing readme files for each project ([b714f26](https://github.com/binibiz/eslint-config/commit/b714f2625274bc70955649824d956650887fc6b6))
+
+
+
+
+
 # [1.1.0](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-react-typescript@1.0.8...@binibiz/eslint-config-react-typescript@1.1.0) (2022-07-04)
 
 
