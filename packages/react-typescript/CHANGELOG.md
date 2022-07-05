@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-react-typescript@1.2.2...@binibiz/eslint-config-react-typescript@1.2.3) (2022-07-05)
+
+
+### Bug Fixes
+
+* **react-typescript:** import typescript after react so we can turn eslint rules off ([8eb040b](https://github.com/binibiz/eslint-config/commit/8eb040b38d559237f0c04f0fe4b5019bea114fae))
+
+
+
+
+
 ## [1.2.2](https://github.com/binibiz/eslint-config/compare/@binibiz/eslint-config-react-typescript@1.2.1...@binibiz/eslint-config-react-typescript@1.2.2) (2022-07-04)
 
 **Note:** Version bump only for package @binibiz/eslint-config-react-typescript
