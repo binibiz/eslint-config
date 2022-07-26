@@ -361,7 +361,7 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
      */
     "@typescript-eslint/no-magic-numbers": [
-      "error",
+      "off",
       {
         ignoreNumericLiteralTypes: true,
         ignoreReadonlyClassProperties: true,
